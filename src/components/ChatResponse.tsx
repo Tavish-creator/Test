@@ -18,12 +18,12 @@ export default function ChatResponse({ response, isLoading }: ChatResponseProps)
           animate={{ opacity: 1, y: 0 }}
           className="flex items-start gap-4"
         >
-          <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
-            <Bot className="w-6 h-6 text-indigo-600" />
+          <div className="w-10 h-10 rounded-full bg-indigo-900/30 flex items-center justify-center shrink-0">
+            <Bot className="w-6 h-6 text-indigo-400" />
           </div>
-          <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm flex items-center gap-3">
-            <Loader2 className="w-5 h-5 text-indigo-600 animate-spin" />
-            <p className="text-gray-600 font-medium">Declutterbot is analyzing your space...</p>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 shadow-xl flex items-center gap-3">
+            <Loader2 className="w-5 h-5 text-indigo-400 animate-spin" />
+            <p className="text-zinc-300 font-medium">Declutterbot is analyzing your space...</p>
           </div>
         </motion.div>
       )}
@@ -34,11 +34,11 @@ export default function ChatResponse({ response, isLoading }: ChatResponseProps)
           animate={{ opacity: 1, y: 0 }}
           className="flex items-start gap-4"
         >
-          <div className="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center shrink-0">
-            <Bot className="w-6 h-6 text-indigo-600" />
+          <div className="w-10 h-10 rounded-full bg-indigo-900/30 flex items-center justify-center shrink-0">
+            <Bot className="w-6 h-6 text-indigo-400" />
           </div>
-          <div className="bg-white border border-gray-100 rounded-2xl p-8 shadow-sm flex-1">
-            <div className="prose prose-indigo max-w-none prose-p:leading-relaxed prose-headings:font-semibold prose-headings:text-gray-900 prose-strong:text-gray-900">
+          <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-8 shadow-xl flex-1">
+            <div className="prose prose-invert prose-indigo max-w-none prose-p:leading-relaxed prose-headings:font-semibold prose-headings:text-white prose-strong:text-white prose-zinc">
               <ReactMarkdown>{response}</ReactMarkdown>
             </div>
           </div>

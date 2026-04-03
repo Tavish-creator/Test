@@ -54,8 +54,8 @@ export default function ImageUpload({ onImageSelect }: ImageUploadProps) {
           className={cn(
             "relative group cursor-pointer border-2 border-dashed rounded-2xl p-8 transition-all duration-300 flex flex-col items-center justify-center gap-4 min-h-[240px]",
             isDragging 
-              ? "border-indigo-500 bg-indigo-50/50" 
-              : "border-gray-200 hover:border-indigo-400 hover:bg-gray-50/50"
+              ? "border-indigo-500 bg-indigo-500/10" 
+              : "border-zinc-800 hover:border-indigo-500/50 hover:bg-zinc-900/50"
           )}
         >
           <input
@@ -65,16 +65,16 @@ export default function ImageUpload({ onImageSelect }: ImageUploadProps) {
             accept="image/*"
             className="hidden"
           />
-          <div className="w-16 h-16 rounded-full bg-indigo-50 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-            <Upload className="w-8 h-8 text-indigo-600" />
+          <div className="w-16 h-16 rounded-full bg-zinc-900 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+            <Upload className="w-8 h-8 text-indigo-400" />
           </div>
           <div className="text-center">
-            <p className="text-lg font-medium text-gray-900">Upload a photo of your room</p>
-            <p className="text-sm text-gray-500 mt-1">Drag and drop or click to browse</p>
+            <p className="text-lg font-medium text-white">Upload a photo of your room</p>
+            <p className="text-sm text-zinc-500 mt-1">Drag and drop or click to browse</p>
           </div>
         </div>
       ) : (
-        <div className="relative rounded-2xl overflow-hidden border border-gray-200 bg-gray-50 aspect-video max-h-[400px] flex items-center justify-center">
+        <div className="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-950 aspect-video max-h-[400px] flex items-center justify-center">
           <img
             src={preview}
             alt="Room preview"
@@ -83,7 +83,7 @@ export default function ImageUpload({ onImageSelect }: ImageUploadProps) {
           />
           <button
             onClick={clearImage}
-            className="absolute top-4 right-4 p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-red-50 hover:text-red-600 transition-all duration-200"
+            className="absolute top-4 right-4 p-2 bg-zinc-900/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-red-950 hover:text-red-400 transition-all duration-200 border border-zinc-800"
           >
             <X className="w-5 h-5" />
           </button>
