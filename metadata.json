@@ -1,0 +1,7 @@
+{
+  "name": "Declutterbot",
+  "description": "A professional home organization assistant that provides decluttering strategies, space optimization, and room enhancement suggestions based on your photos.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
